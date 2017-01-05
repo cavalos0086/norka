@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HomeModule } from './home/home.module';
 import { ContactmeModule } from './contactme/contactme.module';
 
 import { AppComponent } from './app.component';
@@ -21,7 +20,6 @@ import { AppComponent } from './app.component';
     HttpModule,
     NgbModule.forRoot(),
     AppRoutingModule,
-    HomeModule,
     ContactmeModule
   ],
   providers: [],
