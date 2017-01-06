@@ -1,6 +1,15 @@
 @import '~bootstrap/scss/_variables.scss';
 @import '~bootstrap/scss/mixins';
 
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+        float: none;
+        display: inline-block;
+    }
+}
+
 @include media-breakpoint-up(xs) {
     li#mainName {
         display:block;
@@ -8,16 +17,8 @@
 }
 
 @include media-breakpoint-up(sm) {
-  .navbar-nav {
-    width: 100%;
-    text-align: center;
-    > li {
-      &#mainName {
-        display:inline-block;
-      }
-      float: none;
-      display: inline-block;
+    li#mainName {
+        display: inline-block;
     }
-  }
 }
 
