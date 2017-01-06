@@ -1,15 +1,23 @@
-#main{
-  padding:0; // make jumbotrom take the full width
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins';
+
+@include media-breakpoint-up(xs) {
+    li#mainName {
+        display:block;
+    }
 }
 
-.navbar {
-  button {
-    border-color: transparent;
+@include media-breakpoint-up(sm) {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      &#mainName {
+        display:inline-block;
+      }
+      float: none;
+      display: inline-block;
+    }
   }
 }
 
-.toCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
