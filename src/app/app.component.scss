@@ -1,7 +1,14 @@
 @import '~bootstrap/scss/_variables.scss';
 @import '~bootstrap/scss/mixins';
+
 .navbar {
-  position: fixed;
+  background-color: lightcoral;
+  border-radius: 0;
+
+  &.fixed-top {
+    min-height: 80px;
+  }
+
 }
 
 .navbar-nav {
@@ -10,6 +17,20 @@
     > li {
         float: none;
         display: inline-block;
+        &#mainName {
+          a {
+            font-size: 30px;
+            font-style: italic;
+          }
+        }
+    }
+
+    a {
+      font-family: 'Baloo Thambi';
+      font-size:20px;
+      &.active {
+        text-decoration: underline;
+      }
     }
 }
 
