@@ -20,9 +20,9 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
-    AppRoutingModule,
     HomeModule,
-    ContactModule
+    ContactModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
