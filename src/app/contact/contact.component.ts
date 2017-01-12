@@ -11,5 +11,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
+  // TODO: Add Mailgun API service
 
+  // TODO: Add Form validation on input variables
 }
