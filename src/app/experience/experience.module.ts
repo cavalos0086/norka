@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { ExperienceComponent } from './experience.component';
+import { ExperienceRoutingModule } from './experience-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ExperienceRoutingModule
   ],
   declarations: [ExperienceComponent]
 })
