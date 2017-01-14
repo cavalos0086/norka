@@ -11,10 +11,12 @@ import { ContactModule } from './contact/contact.module';
 import { ExperienceModule } from './experience/experience.module';
 
 import { AppComponent } from './app.component';
+import { CavalosCircularProgressBarDirective } from './cavalos-circular-progress-bar.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CavalosCircularProgressBarDirective
   ],
   imports: [
     BrowserModule,
