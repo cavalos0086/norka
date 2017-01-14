@@ -1,7 +1,5 @@
 window.onload = function() {
-
-
-    function textValue(value) {
+    function setTextValue(value) {
         return {
             text: {value: value.toString()}
         }
@@ -23,14 +21,22 @@ window.onload = function() {
             }
         }
 
-        var options = Object.assign({}, commonOptions, textValue(0.93));
+        var options = Object.assign({}, commonOptions, setTextValue(textvalue));
         var progressBar = new ProgressBar.Circle(id.toString(), options);
 
         return progressBar;
     }
 
-    // var sketch = new ProgressBar.Circle('#sketch', Object.assign({}, commonOptions, textValue('0.93')));
-    createProgressBar('#sketch', '0.93').animate(0.93);  // Number from 0.0 to 1.0
+    var sketch = createProgressBar('#sketch', '0.93')
+    sketch.animate(0.93);
 
+    var omnigraffle = createProgressBar('#omnigraffle', '0.74')
+    omnigraffle.animate(0.74);
+
+    var invision = createProgressBar('#invision', '0.85');
+    invision.animate(0.85);
+
+    var principle = createProgressBar('#principle', '0.69');
+    principle.animate(0.69);
 
 }
