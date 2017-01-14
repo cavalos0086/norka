@@ -1,17 +1,17 @@
 declare var require;
 let ProgressBar = require('progressbar.js');
 
-import { Directive, ElementRef } from '@angular/core';
-
+import { Directive, ElementRef, AfterContentInit } from '@angular/core';
 
 @Directive({
     selector: '[appCaCircularProgressBar]'
 })
-export class CaCircularProgressBarDirective {
+export class CaCircularProgressBarDirective implements AfterContentInit{
 
     sketch;
-    constructor(el: ElementRef) {
+    constructor(el: ElementRef) {}
 
+    ngAfterContentInit() {
         const commonOptions = {
             color: '#FFEA82',
             trailColor: '#f4f4f4',
@@ -29,10 +29,9 @@ export class CaCircularProgressBarDirective {
                 value: '0.93'
             }
         };
-        setTimeout(function() {
-            this.sketch = new ProgressBar.Circle('#sketch', commonOptions);
-            this.sketch.animate(0.93);
-        }, 1000);
+
+        this.sketch = new ProgressBar.Circle('#sketch', commonOptions);
+        this.sketch.animate(0.93);
     }
 
 }
