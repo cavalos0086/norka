@@ -1,5 +1,5 @@
 declare var require;
-let ProgressBar = require('progressbar.js');
+const ProgressBar = require('progressbar.js');
 
 import { Directive, ElementRef, AfterContentInit } from '@angular/core';
 
@@ -8,10 +8,27 @@ import { Directive, ElementRef, AfterContentInit } from '@angular/core';
 })
 export class CaCircularProgressBarDirective implements AfterContentInit{
 
-    sketch;
-    constructor(el: ElementRef) {}
+    elementId;
+    progressBar;
+
+    constructor(el: ElementRef) {
+        this.elementId = el.nativeElement.id;
+    }
 
     ngAfterContentInit() {
+        this.progressBar = new ProgressBar.Circle('#' + this.elementId, this.returnCommonOptions());
+        this.progressBar.animate(0.93);
+    }
+
+
+    /**
+     * @function returnCommonOptions
+     * @description Returns common options used by each animation
+     * @returns [Object]
+     *
+     * @memberOf CaCircularProgressBarDirective
+     */
+    returnCommonOptions() {
         const commonOptions = {
             color: '#FFEA82',
             trailColor: '#f4f4f4',
@@ -30,8 +47,7 @@ export class CaCircularProgressBarDirective implements AfterContentInit{
             }
         };
 
-        this.sketch = new ProgressBar.Circle('#sketch', commonOptions);
-        this.sketch.animate(0.93);
+        return commonOptions;
     }
 
 }
