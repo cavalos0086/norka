@@ -35,7 +35,7 @@ export class CaCircularProgressBarDirective implements AfterContentInit{
         const commonOptions = {
             color: '#4ECDC4',
             trailColor: '#f4f4f4',
-            trailWidth: 1,
+            trailWidth: 3.5,
             duration: 1400,
             easing: 'bounce',
             strokeWidth: 3.5,
