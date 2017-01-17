@@ -1,7 +1,7 @@
 declare var require;
 const ProgressBar = require('progressbar.js');
 
-import { Directive, ElementRef, AfterContentInit } from '@angular/core';
+import { Directive, ElementRef, AfterContentInit, Input } from '@angular/core';
 
 @Directive({
     selector: '[appCaCircularProgressBar]'
@@ -9,41 +9,44 @@ import { Directive, ElementRef, AfterContentInit } from '@angular/core';
 export class CaCircularProgressBarDirective implements AfterContentInit{
 
     elementId;
-    progressBar;
+    @Input() animationValue: number;
+    @Input() textValue: number;
 
-    constructor(el: ElementRef) {
+    constructor(private el: ElementRef) {
         this.elementId = el.nativeElement.id;
     }
 
+    // we use ngAfterContentInit to ensure that template has already been compiled at this point
     ngAfterContentInit() {
-        this.progressBar = new ProgressBar.Circle('#' + this.elementId, this.returnCommonOptions());
-        this.progressBar.animate(0.93);
+        const progressBar = new ProgressBar.Circle('#' + this.elementId, this.createCommonOptions(this.textValue));
+        progressBar.animate(this.animationValue);
     }
 
 
     /**
-     * @function returnCommonOptions
-     * @description Returns common options used by each animation
+     * @function createCommonOptions
+     * @description creates common options Object used by each animation
+     * @param [textValue] string: Text which is going to be displayed in the middle of circular progressBar
      * @returns [Object]
      *
      * @memberOf CaCircularProgressBarDirective
      */
-    returnCommonOptions() {
+    createCommonOptions(textValue) {
         const commonOptions = {
-            color: '#FFEA82',
+            color: '#4ECDC4',
             trailColor: '#f4f4f4',
             trailWidth: 1,
             duration: 1400,
             easing: 'bounce',
-            strokeWidth: 0.5,
+            strokeWidth: 3.5,
             from: { color: '#FFEA82', a: 0 },
-            to: { color: '#ED6A5A', a: 1 },
+            to: { color: '#4ECDC4', a: 1 },
             // Set default step function for all animate calls
             step: function (state, circle) {
                 circle.path.setAttribute('stroke', state.color);
             },
             text: {
-                value: '0.93'
+                value: textValue
             }
         };
 
