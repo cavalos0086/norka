@@ -1,8 +1,13 @@
 .container {
     font-family: 'didact gothic';
 }
+
+.card-header {
+    background-color: transparent;
+    border: 0;
+}
 img {
-    border-radius: 50%;
+    border-radius: 60%;
     display: inline;
 }
 
@@ -10,11 +15,12 @@ p {
     margin: 0;
 }
 
+#secondRow {
+    margin-top: 60px;
+}
+
 .card {
     border: 0;
-    &#professionalExperince {
-        border: 1px solid rgba(0,0,0,.125);
-    }
 }
 
 div#imgCard {
@@ -27,4 +33,15 @@ div#textCard {
 
 div.ca-text-center {
     text-align: center;
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// Small devices (landscape phones, less than 768px)
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+    #mycontainer {
+        width: 100%;
+    }
 }
