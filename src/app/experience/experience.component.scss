@@ -25,10 +25,14 @@ p {
 
 div#imgCard {
     text-align: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 div#textCard {
-    text-align: center;
+    padding: 30px 0;
 }
 
 div.ca-text-center {
