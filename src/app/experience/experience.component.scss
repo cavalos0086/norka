@@ -35,6 +35,10 @@ div.ca-text-center {
     text-align: center;
 }
 
+#logo{
+    margin-top:30px;
+    width: 300px;
+}
 
 
 // Extra small devices (portrait phones, less than 576px)
@@ -45,3 +49,12 @@ div.ca-text-center {
         width: 100%;
     }
 }
+
+@media (max-width: 767px) {
+    #logo{
+        margin-top:30px;
+        width: 200px;
+    }
+}
+
+
