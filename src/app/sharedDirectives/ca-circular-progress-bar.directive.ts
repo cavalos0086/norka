@@ -46,7 +46,23 @@ export class CaCircularProgressBarDirective implements AfterContentInit{
                 circle.path.setAttribute('stroke', state.color);
             },
             text: {
-                value: textValue
+                value: textValue,
+                style: {
+                    // Text color.
+                    // Default: same as stroke color (options.color)
+                    color: '#4ECDC4',
+                    position: 'absolute',
+                    left: '50%',
+                    top: '50%',
+                    padding: 0,
+                    margin: 0,
+                    'font-size': '25px',
+                    // You can specify styles which will be browser prefixed
+                    transform: {
+                        prefix: true,
+                        value: 'translate(-50%, -50%)'
+                    }
+                },
             }
         };
 
