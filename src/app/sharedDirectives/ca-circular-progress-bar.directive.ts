@@ -34,7 +34,7 @@ export class CaCircularProgressBarDirective implements AfterContentInit{
     createCommonOptions(textValue) {
         const commonOptions = {
             color: '#4ECDC4',
-            trailColor: '#f4f4f4',
+            trailColor: 'rgba(0, 0, 0, 0.35)',
             trailWidth: 5.0,
             duration: 1400,
             easing: 'bounce',
