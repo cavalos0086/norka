@@ -8,6 +8,11 @@
     border: 0;
 
 }
+
+.card-block {
+    padding: 1.23rem 0;
+}
+
 img {
     border-radius: 60%;
     display: inline;
@@ -41,11 +46,11 @@ div.ca-text-center {
     text-align: center;
 }
 
+
 #logo{
     margin-top:30px;
     width: 300px;
 }
-
 
 // Extra small devices (portrait phones, less than 576px)
 // Small devices (landscape phones, less than 768px)
@@ -60,6 +65,10 @@ div.ca-text-center {
     #logo{
         margin-top:30px;
         width: 200px;
+    }
+
+    p.card-text {
+        font-size:12px;
     }
 }
 
