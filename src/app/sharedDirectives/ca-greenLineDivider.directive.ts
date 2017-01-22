@@ -8,5 +8,6 @@ export class CaGreenLineDividerDirective {
     constructor(private el: ElementRef) {
         el.nativeElement.style.background = '#4ECDC4';
         el.nativeElement.style.height = '10px';
+        el.nativeElement.style.opacity = '0.35';
     }
 }
