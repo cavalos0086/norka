@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
 import { ContactModule } from './contact/contact.module';
 import { ExperienceModule } from './experience/experience.module';
+import { ProjectsModule } from './projects/projects.module';
 
 // TODO: Currently shareDirective is a module that is getting injected into multiple modules. Refactor this if possible
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import { AppComponent } from './app.component';
     HomeModule,
     ContactModule,
     ExperienceModule,
+    ProjectsModule,
     AppRoutingModule
   ],
   providers: [],
