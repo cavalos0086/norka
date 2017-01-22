@@ -1,6 +1,6 @@
 div.jumbotron {
     /* Location of the image */
-    background-image: url('assets/images/background.jpg');
+    background-image: url('assets/images/lightBulb.jpg');
 
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
@@ -19,6 +19,10 @@ div.jumbotron {
     /* Set a background color that will be displayed
         while the background image is loading */
     background-color: #464646;
+}
+
+.card-text {
+    font-family: 'didact gothic';
 }
 
 blockquote {
