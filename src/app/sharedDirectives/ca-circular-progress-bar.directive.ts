@@ -35,10 +35,10 @@ export class CaCircularProgressBarDirective implements AfterContentInit{
         const commonOptions = {
             color: '#4ECDC4',
             trailColor: 'rgba(0, 0, 0, 0.35)',
-            trailWidth: 5.0,
+            trailWidth: 7.0,
             duration: 3400,
             easing: 'bounce',
-            strokeWidth: 5.0,
+            strokeWidth: 7.0,
             from: { color: '#FFEA82', a: 0 },
             to: { color: '#4ECDC4', a: 1 },
             // Set default step function for all animate calls
