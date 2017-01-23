@@ -1,6 +1,6 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
-const defaultColor = '#4ECDC4';
+const defaultColor = 'rgba(78, 205, 196, 0.60)';
 @Directive({
     selector: '[appCaHighlighter]'
 })
