@@ -2,12 +2,13 @@
     margin-top: 50px;
 }
 
+
 .card-footer {
     background-color: transparent;
     border:0;
 
     &#strand {
-        padding-top: 22px;
+        padding: 22px 0 32px 0;
     }
 }
 
@@ -18,6 +19,7 @@ h5 {
 
 .card {
     border: 0;
+    cursor: pointer;
 }
 
 .fa {
