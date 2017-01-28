@@ -13,7 +13,7 @@ const projectRoutes: Routes = [
         component: ProjectsComponent,
         children: [
             {path: 'givz', component: GivzComponent},
-            {path: 'pomower', component: PomowebComponent},
+            {path: 'pomoweb', component: PomowebComponent},
             {path: 'strand', component: StrandComponent}
         ]
     }
