@@ -5,6 +5,7 @@ import { SharedDirectivesModule } from '../sharedDirectives/sharedDirectives.mod
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
 import { ProjectNavigationComponent } from './project-navigation/project-navigation.component';
+import { GivzModule } from './givz/givz.module';
 
 
 
@@ -12,7 +13,8 @@ import { ProjectNavigationComponent } from './project-navigation/project-navigat
   imports: [
     CommonModule,
     SharedDirectivesModule,
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    GivzModule
   ],
   declarations: [ProjectsComponent, ProjectNavigationComponent]
 })
