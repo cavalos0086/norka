@@ -14,6 +14,8 @@ import { ProjectsModule } from './projects/projects.module';
 // TODO: Currently shareDirective is a module that is getting injected into multiple modules. Refactor this if possible
 import { AppComponent } from './app.component';
 
+import { NavGuardService } from './nav-guard.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -29,7 +31,7 @@ import { AppComponent } from './app.component';
     ProjectsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NavGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
