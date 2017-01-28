@@ -10,13 +10,7 @@ const projectRoutes: Routes = [
         path: 'projects',
         component: ProjectsComponent,
         children: [
-            {
-                path: '',
-                component: ProjectNavigationComponent,
-                children: [
-                    {path: '', component: GivzComponent}
-                ]
-            }
+            {path: '', component: ProjectNavigationComponent}
         ]
     }
 ];

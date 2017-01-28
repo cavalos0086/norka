@@ -6,6 +6,8 @@ import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
 import { ProjectNavigationComponent } from './project-navigation/project-navigation.component';
 import { GivzModule } from './givz/givz.module';
+import { PomowebModule } from './pomoweb/pomoweb.module';
+import { StrandModule } from './strand/strand.module';
 
 
 
@@ -14,7 +16,9 @@ import { GivzModule } from './givz/givz.module';
     CommonModule,
     SharedDirectivesModule,
     ProjectsRoutingModule,
-    GivzModule
+    GivzModule,
+    PomowebModule,
+    StrandModule
   ],
   declarations: [ProjectsComponent, ProjectNavigationComponent]
 })
