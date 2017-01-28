@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-    {path: '**', redirectTo: 'home', pathMatch: 'full'}
+    // TODO: restore redirect to home.
+    // {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
