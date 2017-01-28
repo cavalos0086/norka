@@ -15,6 +15,7 @@ import { ProjectsModule } from './projects/projects.module';
 import { AppComponent } from './app.component';
 
 import { NavGuardService } from './nav-guard.service';
+import { NavigationService } from './navigation.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,10 @@ import { NavGuardService } from './nav-guard.service';
     ProjectsModule,
     AppRoutingModule
   ],
-  providers: [NavGuardService],
+  providers: [
+      NavigationService,
+      NavGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
