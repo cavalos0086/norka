@@ -1,8 +1,13 @@
 import { Injectable } from '@angular/core';
+import { CanActivateChild } from '@angular/router';
 
 @Injectable()
-export class NavGuardService {
+export class NavGuardService implements CanActivateChild {
 
-  constructor() { }
+    constructor() {}
 
+    canActivateChild() {
+        console.log('AuthGuard#canActivate called');
+        return true;
+    }
 }
