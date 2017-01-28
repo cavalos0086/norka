@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NavGuardService } from '../nav-guard.service';
-
 import { ProjectsComponent } from './projects.component';
-import { ProjectNavigationComponent } from './project-navigation/project-navigation.component';
+import { GivzComponent } from './givz/givz.component';
+import { PomowebComponent } from './pomoweb/pomoweb.component';
+import { StrandComponent } from './strand/strand.component';
+
 
 const projectRoutes: Routes = [
     {
         path: 'projects',
         component: ProjectsComponent,
-        canActivateChild: [NavGuardService],
         children: [
-            {path: '', component: ProjectNavigationComponent}
+            {path: 'givz', component: GivzComponent},
+            {path: 'pomower', component: PomowebComponent},
+            {path: 'strand', component: StrandComponent}
         ]
     }
 ];
