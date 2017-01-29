@@ -1,0 +1,28 @@
+.card {
+    border: 0;
+}
+
+.card-header {
+    background-color: transparent;
+    padding-left: 0;
+    border-bottom: 0;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+.ca-card-text {
+    border: 0;
+}
+
+.ca-row-alternate {
+    padding-top: 20px;
+    background-color: rgba(78, 205, 196, 0.5);
+
+    div.card {
+        border: 0;
+        background-color: transparent;
+    }
+}
+
