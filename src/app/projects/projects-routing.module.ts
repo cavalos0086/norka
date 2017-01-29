@@ -26,6 +26,7 @@ const projectRoutes: Routes = [
                 path: 'givz',
                 component: GivzComponent,
                 children: [
+                    {path: '', redirectTo: 'brief', pathMatch: 'full'},
                     {path: 'brief', component:GivzBriefComponent},
                     {path: 'research', component: GivzResearchComponent},
                     {path: 'design', component: GivzDesignComponent},
