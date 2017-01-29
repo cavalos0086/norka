@@ -5,9 +5,8 @@ $greenFullOpacity: rgba(78, 205, 196, 1);
     background-color: $greenHalfOpacity;
 }
 
-.card-header {
-    background-color: transparent;
-    border: 0;
+.ca-vertical-center {
+    display: table;
 }
 
 .ca-text-center {
@@ -16,6 +15,11 @@ $greenFullOpacity: rgba(78, 205, 196, 1);
 
 .ca-text-justify {
     text-align: justify;
+}
+
+.card-header {
+    background-color: transparent;
+    border: 0;
 }
 
 .card {
@@ -72,5 +76,5 @@ $greenFullOpacity: rgba(78, 205, 196, 1);
 }
 
 #ca-row-8 {
-    margin: 20px 0 40px 0;
+    margin: 10px 0 40px 0;
 }
