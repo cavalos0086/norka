@@ -12,9 +12,21 @@ const projectRoutes: Routes = [
         path: 'projects',
         component: ProjectsComponent,
         children: [
-            {path: 'givz', component: GivzComponent},
-            {path: 'pomoweb', component: PomowebComponent},
-            {path: 'strand', component: StrandComponent}
+            {
+                path: 'givz',
+                component: GivzComponent,
+                children: []
+            },
+            {
+                path: 'pomoweb',
+                component: PomowebComponent,
+                children: []
+            },
+            {
+                path: 'strand',
+                component: StrandComponent,
+                children: []
+            }
         ]
     }
 ];
