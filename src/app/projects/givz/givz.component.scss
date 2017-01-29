@@ -12,5 +12,8 @@ div.row {
         &:hover {
             border-bottom: 3px solid rgb(78, 205, 196);
         }
+        &.active {
+            border-bottom: 3px solid rgb(78, 205, 196);
+        }
     }
 }
