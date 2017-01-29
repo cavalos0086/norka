@@ -8,6 +8,10 @@ import { ProjectNavigationComponent } from './project-navigation/project-navigat
 import { StrandComponent } from './strand/strand.component';
 import { GivzComponent } from './givz/givz.component';
 import { PomowebComponent } from './pomoweb/pomoweb.component';
+import { GivzBriefComponent } from './givz/givz-brief/givz-brief.component';
+import { GivzResearchComponent } from './givz/givz-research/givz-research.component';
+import { GivzDesignComponent } from './givz/givz-design/givz-design.component';
+import { GivzLearningComponent } from './givz/givz-learning/givz-learning.component';
 
 @NgModule({
     imports: [
@@ -21,7 +25,11 @@ import { PomowebComponent } from './pomoweb/pomoweb.component';
         StrandComponent,
         GivzComponent,
         PomowebComponent,
-        GivzBriefComponent
+        GivzBriefComponent,
+        GivzBriefComponent,
+        GivzResearchComponent,
+        GivzDesignComponent,
+        GivzLearningComponent
     ]
 })
 export class ProjectsModule { }
