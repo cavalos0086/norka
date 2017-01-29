@@ -1,0 +1,76 @@
+$greenHalfOpacity : rgba(78, 205, 196, 0.5);
+$greenFullOpacity: rgba(78, 205, 196, 1);
+
+.ca-row-alternate {
+    background-color: $greenHalfOpacity;
+}
+
+.card-header {
+    background-color: transparent;
+    border: 0;
+}
+
+.ca-text-center {
+    text-align: center;
+}
+
+.ca-text-justify {
+    text-align: justify;
+}
+
+.card {
+    border: 0;
+    background-color: transparent;
+}
+
+#ca-row-1 {
+    margin-top: 100px;
+    h3 {
+        color: $greenFullOpacity;
+    }
+}
+
+#ca-row-2 {
+    .card {
+        padding: 10px 40px;
+        img {
+            border: 1px solid $greenFullOpacity;
+        }
+    }
+}
+
+#ca-row-3 {
+    margin-top: 30px;
+    h3 {
+        color: $greenFullOpacity;
+    }
+}
+
+#ca-row-4 {
+    padding-top: 20px;
+    h3 {
+        color: $greenFullOpacity;
+    }
+}
+
+#ca-row-5 {
+    padding-top: 20px;
+    h3 {
+        color: $greenFullOpacity;
+    }
+    .card {
+        &>img {
+            padding: 20px 4px;
+        }
+    }
+}
+
+#ca-row-7 {
+    h3 {
+        color: $greenFullOpacity;
+    }
+}
+
+#ca-row-8 {
+    margin: 20px 0 40px 0;
+}
