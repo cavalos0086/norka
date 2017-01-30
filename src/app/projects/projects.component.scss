@@ -1,3 +1,4 @@
+$black: #292F36;
 .container {
     margin-top: 50px;
 }
@@ -60,6 +61,9 @@ blockquote {
 .ca-project-active {
     background-color: rgba(78, 205, 196, 0.60);
     .card {
+        h2, p, a, span.fa {
+            color: $black;
+        }
         cursor: not-allowed;
         margin-bottom: 0;
         background-color: transparent;
@@ -73,7 +77,7 @@ blockquote {
     }
     &:hover {
         h2, p, a, span.fa {
-            color: #292F36;
+            color: $black;
         }
     }
 }
