@@ -1,0 +1,32 @@
+@import "~_variables.scss";
+
+.container {
+    margin-top: 50px;
+}
+
+#ca-row-1 {
+    h3.card-header {
+        color: $greenFullOpacity;
+    }
+}
+
+#ca-row-6 {
+    h3.card-header {
+        color: $greenFullOpacity;
+        padding-left: 0;
+    }
+}
+
+#ca-row-5 {
+    h3.card-header {
+        color: $greenFullOpacity;
+        padding-left: 0;
+    }
+    p.card-text {
+        padding: 20px 0;
+    }
+}
+
+.ca-row-alternate {
+    margin: 40px 0;
+}
