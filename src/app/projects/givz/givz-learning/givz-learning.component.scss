@@ -1,0 +1,32 @@
+$greenHalfOpacity : rgba(78, 205, 196, 0.5);
+$greenFullOpacity: rgba(78, 205, 196, 1);
+$black: #292F36;
+
+.container {
+    margin-top: 50px;
+}
+
+.ca-row-alternate {
+    background-color: $greenHalfOpacity;
+}
+
+.ca-text-justify {
+    text-align: justify;
+}
+
+.card-header {
+    background-color: transparent;
+    border: 0;
+}
+
+.card {
+    border: 0;
+    background-color: transparent;
+    img {
+        padding: 10px;
+    }
+}
+
+#ca-row-2 {
+    margin: 40px 0;
+}
