@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "_variables";
+
+p, a, label {
+    font-family: 'didact gothic';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'baloo thambi';
+}
+
+blockquote {
+    font-family: 'arima madurai'
+}
+
+.ca-row-alternate {
+    background-color: $greenHalfOpacity;
+}
+
+.ca-vertical-center {
+    display: table;
+}
+
+.ca-text-center {
+    text-align: center;
+}
+
+.ca-text-justify {
+    text-align: justify;
+}
+
+.card-header {
+    background-color: transparent;
+    border: 0;
+}
+
+.card {
+    border: 0;
+    background-color: transparent;
+}
