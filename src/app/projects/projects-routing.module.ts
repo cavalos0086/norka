@@ -12,6 +12,9 @@ import { GivzLearningComponent } from './givz/givz-learning/givz-learning.compon
 
 // Components groups: Pomoweb
 import { PomowebComponent } from './pomoweb/pomoweb.component';
+import { PomowebBriefComponent } from './pomoweb/pomoweb-brief/pomoweb-brief.component';
+import { PomowebDesignComponent } from './pomoweb/pomoweb-design/pomoweb-design.component';
+import { PomowebLearningComponent } from './pomoweb/pomoweb-learning/pomoweb-learning.component';
 
 // Components groups: Strand
 import { StrandComponent } from './strand/strand.component';
@@ -27,7 +30,7 @@ const projectRoutes: Routes = [
                 component: GivzComponent,
                 children: [
                     {path: '', redirectTo: 'brief', pathMatch: 'full'},
-                    {path: 'brief', component:GivzBriefComponent},
+                    {path: 'brief', component: GivzBriefComponent},
                     {path: 'research', component: GivzResearchComponent},
                     {path: 'design', component: GivzDesignComponent},
                     {path: 'learning', component: GivzLearningComponent}
@@ -36,7 +39,12 @@ const projectRoutes: Routes = [
             {
                 path: 'pomoweb',
                 component: PomowebComponent,
-                children: []
+                children: [
+                    {path: '', redirectTo: 'brief', pathMatch: 'full'},
+                    {path: 'brief', component: PomowebBriefComponent},
+                    {path: 'design', component: PomowebDesignComponent},
+                    {path: 'learning', component: PomowebLearningComponent}
+                ]
             },
             {
                 path: 'strand',
