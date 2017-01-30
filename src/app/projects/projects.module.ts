@@ -12,6 +12,9 @@ import { GivzBriefComponent } from './givz/givz-brief/givz-brief.component';
 import { GivzResearchComponent } from './givz/givz-research/givz-research.component';
 import { GivzDesignComponent } from './givz/givz-design/givz-design.component';
 import { GivzLearningComponent } from './givz/givz-learning/givz-learning.component';
+import { PomowebBriefComponent } from './pomoweb/pomoweb-brief/pomoweb-brief.component';
+import { PomowebDesignComponent } from './pomoweb/pomoweb-design/pomoweb-design.component';
+import { PomowebLearningComponent } from './pomoweb/pomoweb-learning/pomoweb-learning.component';
 
 @NgModule({
     imports: [
@@ -29,7 +32,10 @@ import { GivzLearningComponent } from './givz/givz-learning/givz-learning.compon
         GivzBriefComponent,
         GivzResearchComponent,
         GivzDesignComponent,
-        GivzLearningComponent
+        GivzLearningComponent,
+        PomowebBriefComponent,
+        PomowebDesignComponent,
+        PomowebLearningComponent
     ]
 })
 export class ProjectsModule { }
