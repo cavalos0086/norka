@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private router: Router) {
       // store projects route to navigation to root later.
-      this.projectsRoute = this.router.url;
+      this.projectsRoute = 'projects';
   }
 
   ngOnInit() {
