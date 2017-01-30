@@ -1,0 +1,66 @@
+$greenHalfOpacity : rgba(78, 205, 196, 0.5);
+$greenFullOpacity: rgba(78, 205, 196, 1);
+$black: #292F36;
+
+.container {
+    margin-top: 50px;
+}
+
+h3 {
+    color: $greenFullOpacity;
+}
+
+.ca-row-alternate {
+    background-color: $greenHalfOpacity;
+}
+
+.ca-text-center {
+    text-align: center;
+}
+
+.ca-text-justify {
+    text-align: justify;
+}
+
+.card-header {
+    background-color: transparent;
+    border: 0;
+}
+
+.card {
+    border: 0;
+    background-color: transparent;
+    img {
+        padding: 10px;
+    }
+}
+
+#ca-row-2 {
+    i.ca-red-circle {
+        color: rgb(253,120,121);
+    }
+
+    strong.ca-number-in-circle {
+        color: $black!important;
+    }
+
+    h6 {
+        padding: 10px 0 0 5px;
+        margin-bottom: 0;
+    }
+}
+
+#ca-row-3 {
+    h3.card-header {
+        padding-left: 0;
+    }
+    margin-bottom: 40px;
+    blockquote {
+        color: red;
+        border: 0;
+    }
+}
+
+div#ca-row-4 {
+    margin-bottom: 40px;
+}
