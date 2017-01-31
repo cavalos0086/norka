@@ -15,6 +15,10 @@ import { GivzLearningComponent } from './givz/givz-learning/givz-learning.compon
 import { PomowebBriefComponent } from './pomoweb/pomoweb-brief/pomoweb-brief.component';
 import { PomowebDesignComponent } from './pomoweb/pomoweb-design/pomoweb-design.component';
 import { PomowebLearningComponent } from './pomoweb/pomoweb-learning/pomoweb-learning.component';
+import { StrandBriefComponent } from './strand/strand-brief/strand-brief.component';
+import { StrandResearchComponent } from './strand/strand-research/strand-research.component';
+import { StrandDesignComponent } from './strand/strand-design/strand-design.component';
+import { StrandLearningComponent } from './strand/strand-learning/strand-learning.component';
 
 @NgModule({
     imports: [
@@ -35,7 +39,11 @@ import { PomowebLearningComponent } from './pomoweb/pomoweb-learning/pomoweb-lea
         GivzLearningComponent,
         PomowebBriefComponent,
         PomowebDesignComponent,
-        PomowebLearningComponent
+        PomowebLearningComponent,
+        StrandBriefComponent,
+        StrandResearchComponent,
+        StrandDesignComponent,
+        StrandLearningComponent
     ]
 })
 export class ProjectsModule { }
