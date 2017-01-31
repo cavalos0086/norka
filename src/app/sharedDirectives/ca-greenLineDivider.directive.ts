@@ -6,7 +6,8 @@ import { Directive, ElementRef, Input, AfterContentInit } from '@angular/core';
 
 export class CaGreenLineDividerDirective implements AfterContentInit{
 
-    @Input() lineMargin: string;
+    @Input() marginTop: string;
+    @Input() marginBottom: string;
     constructor(private el: ElementRef) {
         el.nativeElement.style.background = '#4ECDC4';
         el.nativeElement.style.height = '10px';
@@ -15,6 +16,7 @@ export class CaGreenLineDividerDirective implements AfterContentInit{
 
     // we use ngAfterContentInit to ensure that template has already been compiled at this point
     ngAfterContentInit() {
-        this.el.nativeElement.style.margin = this.lineMargin;
+        this.el.nativeElement.style.marginTop = this.marginTop;
+        this.el.nativeElement.style.marginBottom = this.marginBottom;
     }
 }
