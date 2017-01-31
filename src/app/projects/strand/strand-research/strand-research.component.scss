@@ -1,0 +1,21 @@
+@import "~_variables.scss";
+.container {
+    margin-top: 50px;
+}
+
+h3.card-header.ca-text-center {
+    color: $greenFullOpacity;
+}
+
+#ca-row-2 {
+    margin-top: 50px;
+    img {
+        border: 2px solid $greenFullOpacity;
+    }
+}
+#ca-row-3 {
+    margin-top: 50px;
+    img {
+        margin-right: 20px;
+    }
+}
