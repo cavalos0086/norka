@@ -1,0 +1,25 @@
+@import "~_variables.scss";
+
+.container {
+    margin-top: 50px;
+}
+
+.ca-text-green {
+    color: $greenFullOpacity;
+}
+
+#ca-row-1 {
+    h6 {
+        margin-bottom: 0;
+    }
+    & .row {
+        margin-top:50px;
+    }
+}
+
+#ca-row-2 {
+    margin-top: 40px;
+    img {
+        border: 2px solid $greenFullOpacity;
+    }
+}
