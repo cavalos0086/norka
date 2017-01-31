@@ -18,6 +18,10 @@ import { PomowebLearningComponent } from './pomoweb/pomoweb-learning/pomoweb-lea
 
 // Components groups: Strand
 import { StrandComponent } from './strand/strand.component';
+import { StrandBriefComponent } from './strand/strand-brief/strand-brief.component';
+import { StrandResearchComponent } from './strand/strand-research/strand-research.component';
+import { StrandDesignComponent } from './strand/strand-design/strand-design.component';
+import { StrandLearningComponent } from './strand/strand-learning/strand-learning.component';
 
 
 const projectRoutes: Routes = [
@@ -49,7 +53,13 @@ const projectRoutes: Routes = [
             {
                 path: 'strand',
                 component: StrandComponent,
-                children: []
+                children: [
+                    {path: '', redirectTo: 'brief', pathMatch: 'full'},
+                    {path: 'brief', component: StrandBriefComponent},
+                    {path: 'research', component: StrandResearchComponent},
+                    {path: 'design', component: StrandDesignComponent},
+                    {path: 'learning', component: StrandLearningComponent}
+                ]
             }
         ]
     }
